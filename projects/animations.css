@@ -1,0 +1,13 @@
+div {
+
+    position: left;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes example {
+    0%   {width:100%; left:100%;}
+      50% {scale:50%; left: 0%; right:69%;}
+      100% {width:100%; left:100%;}
+  }
