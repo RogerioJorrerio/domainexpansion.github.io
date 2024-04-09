@@ -1,0 +1,89 @@
+
+body {
+  margin: 0%;
+  padding: 0%;
+  background-color: #d3d3d3;}
+
+  nav 
+{
+  background-color: #F3F3F3;
+  font-size: 200%;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 20px;
+  
+  display: inline-block;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.bwbr {
+
+    position: left;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes example {
+    0%   {width:100%; left:100%;}
+      50% {scale:50%; left: 0%; right:69%;}
+      100% {width:100%; left:100%;}
+  }
+
+  h1 
+{
+  /* Option: from font provider (Google) */
+  font-family: "Comic Sans", cursive;
+}
+
+.ガレリー {
+  background-color: #a3a3a3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2%;
+  margin: 5%;
+  font-size: 200%;
+  text-align: center;
+  font-family: "Comic Sans", cursive, italic, bold;
+}
+
+.メージー {
+width: 80%;
+margin:0%;
+
+}
+
+
+
+table 
+{
+  width: 50%;
+}
+
+th, td 
+{
+  padding: 0.5em;
+  text-align: center;
+}
+
+th 
+{
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.8em;
+}
+
+td 
+{
+  background-color: lightgray;
+  font-size: 1.1em;
+}
+
+td:hover 
+{
+  background-color: lightcyan;
+}
