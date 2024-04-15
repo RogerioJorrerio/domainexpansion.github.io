@@ -47,6 +47,10 @@ body {
   font-size: 200%;
   text-align: center;
   font-family: "Comic Sans", cursive, italic, bold;
+  overflow: scroll;
+  border-width: 10px;
+  border-color: #272727;
+  border-style: dashed;
 }
 
 .メージー {
