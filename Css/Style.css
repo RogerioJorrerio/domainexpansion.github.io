@@ -4,9 +4,17 @@ body {
   padding: 0%;
   background-color: #272727;
   color: #c2c2c2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-  nav 
+
+img{
+  pointer-events: none;
+}
+
+nav
 {
   display: flex;
   align-items: center;
@@ -19,36 +27,99 @@ body {
   padding: 1%;
   padding-bottom: 1%;
   padding-top: 1%;
+  text-decoration: none;
+  text-align: center;
   position: absolute;
     top: 5%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+
 }
 
-.bwbr {
+a:link 
+{
 
-    position: left;
-    animation-name: example;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-  }
-  
-  @keyframes example {
-    0%   {width:100%; left:100%;}
-      50% {scale:50%; left: 0%; right:69%;}
-      100% {width:100%; left:100%;}
-  }
+  text-decoration: none;
+  font-family: "Comic Sans", cursive;
+}
+
+
+/* Formating for mouse over link */
+a:hover 
+{
+
+  text-decoration: underline;
+  font-family: "Comic Sans", cursive;
+}
+
+
+/* Formating for clicked link */
+a:active
+{
+
+  text-decoration: underline;
+  font-family: "Comic Sans", cursive;
+}
+
+
+/* Formating for visited link */
+a:visited 
+{
+  color: #272727;
+  text-decoration: none;
+  font-family: "Comic Sans", cursive;
+}
+
 
   h1, h2
 {
   font-family: "Comic Sans", cursive;
 }
+
+.タイトル {
+  margin-top: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.タイトル h1{
+  margin-top: 80px;
+  margin-bottom: 24px;
+}
+
+.僕が{
+  width: 20%;
+}
+
+.僕について{
+  width: 50%;
+  font-size: 169%;
+  text-align: center;
+  font-family: "Comic Sans", cursive;
+}
+
+.僕について ul, li{
+  font-family: "Comic Sans", cursive;
+  font-size: 200%;
+  text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.僕について a:active, a:visited {
+  color: #a2a2a2;
+  text-decoration: none;
+  font-family: "Comic Sans", cursive;
+} 
+
 .ガレリー {
   background-color: #a3a3a3;
-
   padding: 2%;
   margin: 5%;
+  margin-top: 0%;
   color:#F3F3F3;
   font-size: 100%;
   text-align: center;
@@ -59,66 +130,183 @@ body {
   background-color: #a2a2a2;
 }
 
-/*
-figure 
-{
-  width: 30%;
-}
-
-
-figure img 
-{
-  background-color: #272727;
-  width: 100%;
-}
-
-
-figcaption 
-{
-  text-align: center
-}
-*/
-
-.タイツル{
-  text-align: center;
-  position: absolute;
-    top: 1%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, 50%)
-
-}
-.else{
-  text-align: center;
-  position: absolute;
-    top: 1%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, 50%)
-
-}
-
 
 
 .もやし{
 
   border-width: 3%;
   border-style: solid;
-  border-radius: 20px;
+  border-radius: 30%;
   display: inline-block;
-  padding-left: 1%;
-  padding-right: 1%;
-  padding-bottom: 1%;
+  padding: 1%;
   background-color: #272727;
   color: #c2c2c2;
   text-decoration: #c2c2c2;
   position: fixed;
   font-size: 110%;
-  top: 70%;
-  left: 3%;
+  top: 90%;
+  left: 4%;
   margin-right: -50%;
   transform: translate(-50%, -50%)
 }
+
+
+
+
+.else{
+  text-align: center;
+  
+    top: 1%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 50%)
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) 
+{
+
+  .ガレリー img{
+    width: 100%;
+  }
+  .ガレリー {
+
+    font-size: 200%;
+
+  }
+
+  .僕が{
+    width: 50%;
+  }
+  
+  .僕について{
+    width: 80%;
+    font-size: 169%;
+  }
+
+  .もやし{
+
+   
+    top: 90%;
+    left: 15%;
+  }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) 
+{
+ 
+  .ガレリー img{
+    width: 100%;
+  }
+
+  .ガレリー {
+
+    font-size: 150%;
+
+  }
+
+   .僕が{
+    width: 50%;
+  }
+  
+  .僕について{
+    width: 80%;
+    font-size: 169%;
+  }
+
+  .もやし{
+
+   
+    top: 90%;
+    left: 10%;
+  }
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+ 
+  .ガレリー {
+
+    font-size: 150%;
+
+  }
+
+  .僕が{
+    width: 30%;
+  }
+  
+  .僕について{
+    width: 50%;
+    font-size: 169%;
+  }
+
+  .もやし{
+
+   
+    top: 90%;
+    left: 8%;
+  }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) 
+{
+  .ガレリー {
+
+    font-size: 200%;
+
+  }
+
+  .僕が{
+    width: 30%;
+  }
+  
+  .僕について{
+    width: 50%;
+    font-size: 169%;
+  }
+
+  .もやし{
+
+   
+    top: 90%;
+    left: 8%;
+  }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) 
+{
+
+  .ガレリー {
+
+    font-size: 200%;
+
+  }
+
+  .ガレリー img{
+    width: 90%;
+  }
+
+  .僕が{
+    width: 20%;
+  }
+  
+  .僕について{
+    width: 50%;
+    font-size: 169%;
+  }
+
+}
+
 
 
 table 
@@ -141,79 +329,37 @@ th
   font-size: 0.8em;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) 
+
+/*
+figure 
 {
-  .ガレリー 
-  {
-    width: 85%;
-    font-size: 200%;
-  }
-  .メージー{
-    width: 90%;
-  }
-  .タイツル{
-    text-align: center;
-    position: absolute;
-      top: 1%;
-      font-size: 80%;
-      left: 50%;
-      margin-right: -50%;
-      transform: translate(-50%, 50%)
-  
-  }
+  width: 30%;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) 
+
+figure img 
 {
-  .ガレリー 
-  {
-    width: 85%;
-    font-size: 200%;
-  }
-  .メージー{
-    width: 90%;
-  }
+  background-color: #272727;
+  width: 100%;
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) 
+
+figcaption 
 {
-  .ガレリー 
-  {
-    width: 85%;
-    font-size: 200%;
-  }
-  .メージー{
-    width: 90%;
+  text-align: center
+}
+
+.bwbr {
+
+    position: left;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
   }
   
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) 
-{
-  .ガレリー 
-  {
-    width: 85%;
-    font-size: 200%;
+  @keyframes example {
+    0%   {width:100%; left:100%;}
+      50% {scale:50%; left: 0%; right:69%;}
+      100% {width:100%; left:100%;}
   }
-  .メージー{
-    width: 90%;
-  }
-
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) 
-{
-  .ガレリー 
-  {
-    width: 80%;
-    font-size: 200%;
-  }
-  .メージー{
-    width: 80%;
-  }
-}
+*/
