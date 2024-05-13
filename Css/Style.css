@@ -37,6 +37,9 @@ nav
 
 }
 
+html {scroll-behavior: smooth;
+scrollbar-color: #a2a2a2;}
+
 a:link 
 {
 
