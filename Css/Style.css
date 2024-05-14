@@ -380,5 +380,13 @@ th
   letter-spacing: 0.1em;
   font-size: 0.8em;
 }
-/*
+*/
 
+
+
+canvas {
+ align-self: center;
+            width: 640px;
+            height: 640px;
+
+        }
