@@ -49,9 +49,10 @@ top: 15%;
 html {scroll-behavior: smooth;
 scrollbar-color: #a2a2a2;}
 
+
 a:link 
 {
-  color: #272727;
+  color: #d3d3d3;
   text-decoration: none;
   font-family: "Comic Sans", cursive;
 }
@@ -59,7 +60,7 @@ a:link
 
 a:hover 
 {
-  color: #272727;
+  color: #d3d3d3;
   text-decoration: none;
   font-family: "Comic Sans", cursive;
 }
@@ -67,7 +68,7 @@ a:hover
 
 a:active
 {
-  color: #272727;
+  color: #d3d3d3;
   text-decoration: none;
   font-family: "Comic Sans", cursive;
 }
@@ -75,7 +76,7 @@ a:active
 
 a:visited 
 {
-  color: #272727;
+  color: #d3d3d3;
   text-decoration: none;
   font-family: "Comic Sans", cursive;
 }
