@@ -16,29 +16,27 @@
     </nav>
     <iframe
         src="https://www.google.com/logos/fnbx/solitaire/standalone.html"></iframe>
-
         <div class="TimeWasted">
             <p>Time Wasted:</p>
             <label id="minutes">00</label>
             <label id="colon">:</label>
             <label id="seconds">00</label>
                 <script type="text/javascript">
-                    var minutesLabel = document.getElementById("minutes");
-                    var secondsLabel = document.getElementById("seconds");
-                    var totalSeconds = 0;
-                    setInterval(setTime, 1000);
+                    var minutesLabel = document.getElementById("minutes"); /* cria variavel de minutos */
+                    var secondsLabel = document.getElementById("seconds"); /* cria variavel de segundos */
+                    var totalSeconds = 0; /* cria um começo do cornómetro */
+                    setInterval(setTime, 1000); /* define o intervalo como 1000 tics (1 segundo) */
 
                     function setTime()
                     {
-                        ++totalSeconds;
-                        secondsLabel.innerHTML = pad(totalSeconds%60);
-                        minutesLabel.innerHTML = pad(parseInt(totalSeconds/60));
+                        ++totalSeconds; /* adiciona 1 valor */
+                        secondsLabel.innerHTML = pad(totalSeconds%60); /* limita o valor do numero de segundos a chegar no máximo de 60 */
+                        minutesLabel.innerHTML = pad(parseInt(totalSeconds/60)); /* a cada 60 segundos adiciona um valor no numero dos minutos */
                     }
-
                     function pad(val)
                     {
                         var valString = val + "";
-                        if(valString.length < 2)
+                        if(valString.length < 2) /* mantém o relógio com um mínimo de 2 numeros por valor de tempo (aka 01 segundos, ou 01 horas, não tem limite máximo no entanto) */
                         {
                             return "0" + valString;
                         }
