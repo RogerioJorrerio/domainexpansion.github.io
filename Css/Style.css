@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+/* importação da font usada num carater */
 
 body {
-  margin: 0%;
+  margin: 0%; /* margin e padding a 0% para ter um começo do 0 */
   padding: 0%;
   background-color: #272727;
   color: #c2c2c2;
@@ -11,8 +13,44 @@ body {
 
 
 img{
-  pointer-events: none;
+  pointer-events: none; /* para que não possam usar a opção de "guardar imagem como" para ter acesso a imagem dando uma layer de proteção embora haja outras maneiras de o fazer */
 }
+
+/* #アニメ a:link 
+{
+  color: #272727;
+  text-decoration: none;
+  font-family: "Comic Sans", cursive;
+}
+
+
+#アニメ a:hover 
+{
+  color: #272727;
+  text-decoration: none;
+  font-family: "Comic Sans", cursive;
+}
+
+
+#アニメ a:active
+{
+  color: #272727;
+  text-decoration: none;
+  font-family: "Comic Sans", cursive;
+}
+
+
+#アニメ a:visited 
+{
+  color: #272727;
+  text-decoration: none;
+  font-family: "Comic Sans", cursive;
+} */
+
+
+
+
+
 
 nav
 {
@@ -34,8 +72,7 @@ nav
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-
-}
+} /* formatação da barra de navegação */
 
 iframe{
  align-self: center;
@@ -43,7 +80,7 @@ iframe{
  height: 20vw;
  position: absolute;
 top: 15%;
-}
+} /* frame usado na pagina eater egg "solo" */
 
 .TimeWasted{
   align-items: center;
@@ -53,49 +90,36 @@ top: 15%;
   position: absolute;
   margin-top: 64%;
   font-family: "Comic Sans", cursive;
-}
+} /* cronómetro da pagina easter egg para contar o tempo que a pessoa perde lá */
 
 
 html {scroll-behavior: smooth;
-scrollbar-color: #a2a2a2;}
+scrollbar-color: #a2a2a2;} /* scroll behavious para que o "back to top" ou como eu lhe chamo "もやし" tenha uma animação mais suave */
 
 
-a:link 
+
+
+a:link, a:hover, a:active, a:visited
 {
-  color: #d3d3d3;
+  color: #a2a2a2;
   text-decoration: none;
   font-family: "Comic Sans", cursive;
 }
 
 
-a:hover 
-{
-  color: #d3d3d3;
-  text-decoration: none;
-  font-family: "Comic Sans", cursive;
-}
+
+ /* eu a desesperadamente tentar mudar a cor de todos os modos de hyperlink */
 
 
-a:active
-{
-  color: #d3d3d3;
-  text-decoration: none;
-  font-family: "Comic Sans", cursive;
-}
-
-
-a:visited 
-{
-  color: #d3d3d3;
-  text-decoration: none;
-  font-family: "Comic Sans", cursive;
-}
+#amogus{
+  font-family: "Comic Neue", cursive; 
+} /* font usada no carater especial de um "easter egg" da página "proinfo" */
 
 
   h1, h2
 {
   font-family: "Comic Sans", cursive;
-}
+} /* Comic sans bold italic is the best font */
 
 .タイトル {
   margin-top: 1%;
@@ -103,37 +127,26 @@ a:visited
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} /* significa "Title", é a formatação do título das páginas */
+
+
 .タイトル h1{
   margin-top: 80px;
   margin-bottom: 24px;
-}
+} /* formatação dos H1's usados nos títulos das páginas */
 
 .僕が{
   width: 20%;
-}
+} /* significa "sou eu" imagem da minha persona */
 
 .僕について{
   width: 50%;
   font-size: 169%;
   text-align: center;
   font-family: "Comic Sans", cursive;
-}
+} /* significa "about me", e é a formatação do texto que usei para falar de tal */
 
-.僕について ul, li{
-  font-family: "Comic Sans", cursive;
-  font-size: 200%;
-  text-align: center;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.僕について a:active, a:visited {
-  color: #a2a2a2;
-  text-decoration: none;
-  font-family: "Comic Sans", cursive;
-} 
+ /*   */
 
 .ガレリー {
   background-color: #a3a3a3;
@@ -184,6 +197,10 @@ a:visited
 
 }
 
+#アニメ {
+  text-shadow: -0.1vw -0.1vw 0 #fff, 0.1vw -0.1vw 0 #fff, -0.1vw 0.1vw 0 #fff, 0.1vw 0.1vw 0 #fff;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) 
 {
@@ -202,7 +219,9 @@ a:visited
     font-size-adjust: none;
     padding-bottom: 10%;
     }
-
+    #アニメ {
+      text-shadow: -0.2vw -0.2vw 0 #fff, 0.2vw -0.2vw 0 #fff, -0.2vw 0.2vw 0 #fff, 0.2vw 0.2vw 0 #fff;
+    }
 
   figure{
     float: left;
@@ -377,6 +396,8 @@ a:visited
   .僕について{
     width: 50%;
     font-size: 169%;
+    padding: 0%;
+    margin:0%
   }
 
   .もやし{
